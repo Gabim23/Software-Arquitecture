@@ -1,9 +1,5 @@
 # Software-Arquitecture
 
-# Software-Arquitecture
-
-### Versión en Español
-
 # Práctica 1: Captura y Representación de Decisiones de Diseño
 
 ## Universidad Rey Juan Carlos – Diseño y Arquitectura Software (DAS)
@@ -17,7 +13,7 @@ Desarrollar la arquitectura software de un sistema basado en la especificación 
 
 #### Archivos del Repositorio
 
-- r**Decisiones de Diseño (MADR)**: Archivos en formato MADR para cada decisión de diseño documentada.
+- **Decisiones de Diseño (MADR)**: Archivos en formato MADR para cada decisión de diseño documentada.
 - **Arquitectura UML**: Diagramas de clases y paquetes UML.
 - **Ficheros de Voz**: Grabaciones de las discusiones clave entre roles (ASS, ASC, ASJ), organizadas por iteración.
 
