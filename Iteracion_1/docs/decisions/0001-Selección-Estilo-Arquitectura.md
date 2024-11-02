@@ -7,25 +7,26 @@ consulted: {list everyone whose opinions are sought (typically subject-matter ex
 informed: {list everyone who is kept up-to-date on progress; and with whom there is a one-way communication}
 ---
 
-# {short title, representative of solved problem and found solution}
+# Selección-Estilo-Arquitectónico
+
+* Status: Accepted
+* Date: 2024-11-01
 
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
-
+En primer lugar debemos decidir cual es el estilo arquitectónico más óptimo para realizar el diseño del problema dado.
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+* RF01: Cambio de arquitectura.
+<!-- numbers of drivers can vary -->
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+* 0001-1-Estilo-Por-Capas
+* 0001-2-Estilo-REST
+* 0001-3-Estilo-Por-Eventos
+<!-- numbers of options can vary -->
 
 ## Decision Outcome
 
