@@ -7,14 +7,14 @@ consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 ---
 
-# 
+# Componente API Gateway
 
 ## Context and Problem Statement
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* RF02: Selección de tipo de API Gateway. 
+* RF02: Componente API Gateway
 
 ## Considered Options
 
