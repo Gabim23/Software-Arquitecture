@@ -7,46 +7,20 @@ consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 ---
 
-# 
+# Acceso a los datos almecenados
 
 ## Context and Problem Statement
-
-
+El sistema debe almacenar los datos de los clientes como email, nombre, número, id, al igual que el de los pedidos, los cuales tendrán id, dimensión, peso, precio y estado.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* RF02: Selección de tipo de API Gateway. 
+* RF03: Acceso a los datos almacenados
 
 ## Considered Options
 
-* 0003-1-API-Gateway-centralizada
-* 0003-2-API-Gateway-descentralizada
+* 0004-1-2-Bases-de-datos-SQL
 
 ## Decision Outcome
 
-Chosen option: "0003-1-Gateway-centralizada", because Al estar trabajando en una arquitectura de microservicios con parte cliente y servidor, es necesario una API centralizada para gestionar la comunicacion entre estos.
-
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
-
-* Good, because El monitoreo del tràfico de datos se realiza desde un único punto 
-* Good, because Al tener solo una API gateway centralizada, el sistema realiza las solicitudes de manera óptima.
-* Bad, because La efectividad de la comunicacion entre clientes y microservicios depende de una unica API Gateway, afectando la disponibilidad del sistema.
-
-
-<!-- This is an optional element. Feel free to remove. -->
-
-<!-- This is an optional element. Feel free to remove. -->
-## Pros and Cons of the Options
-
-### 0003-2-API-Gateway-descentralizada
-
-<!-- This is an optional element. Feel free to remove. -->
-Permite una comunicacion independiente para cada tipo de cliente a través del uso distintas APIs.
-
-* Good, because Cada API esta enfocada para un tipo de cliente.
-* Bad, because En el caso de tener muchos tipos de clientes hay que crear una API por cada uno de ellos.
-* Bad, because Al tener varias APIs con funcionalidades comunes, complica la implementacion y manteniemiento.
-
-<!-- This is an optional element. Feel free to remove. -->
+Chosen option: "0004-1-2-Bases-de-datos-SQL", because los datos serán almacenados en dos bases de datos distintas, de tipo SQL. En una de ella se guardarán los datos de los clientes, y en la otra los datos de los pedidos.
