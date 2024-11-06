@@ -7,7 +7,7 @@ consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 ---
 
-# Acceso a los datos almecenados
+# Acceso a los datos almacenados
 
 ## Context and Problem Statement
 El sistema debe almacenar los datos de los clientes como email, nombre, número, id, al igual que el de los pedidos, los cuales tendrán id, dimensión, peso, precio y estado.
