@@ -27,7 +27,7 @@ La arquitectura del sistema pasará de ser monolítica a una basada en microserv
 
 ## Decision Outcome
 
-Chosen option: "0001-1-Estilo-Cliente-Servidor-HTTP/REST", because permite que los cliente envíen peticiones al servidor, y este le responde con los datos solicitados,como la confirmación de un pedido o el estado de una solicitud. Además al estar basado en protocols HTTP/REST facilita la comprensión de las interacciones entre el cliente y el servidor y la adaptavilidad a distintos dispositivos.
+Chosen option: "0002-1-Estilo-Cliente-Servidor-con-HTTP/REST", because permite que los cliente envíen peticiones al servidor, y este le responde con los datos solicitados,como la confirmación de un pedido o el estado de una solicitud. Además al estar basado en protocolos HTTP/REST facilita la comprensión de las interacciones entre el cliente y servidor.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
@@ -47,7 +47,7 @@ Chosen option: "0001-1-Estilo-Cliente-Servidor-HTTP/REST", because permite que l
 <!-- This is an optional element. Feel free to remove. -->
 Permite que el cliente envíe peticiones al servidor y este le responde con el resultado de la búsqueda. Al combinarlo con un estilo por eventos, permite detectar acciones de consulta o pago y actuar en consecuencia.
 
-* Good, because Proporciona respuestas a eventos a tiempo real.
+* Good, because Eventos Proporciona respuestas a eventos a tiempo real.
 * Good, because el Estilo por eventos permite que los módulos reaccionen a los cambios de estado sin necesidad de llamadas directas
 <!-- use "neutral" if the given argument weights neither for good nor bad -->
 * Bad, because REST no es óptimo para actualizaciones en tiempo real.
