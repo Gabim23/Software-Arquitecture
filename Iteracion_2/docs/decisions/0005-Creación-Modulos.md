@@ -7,15 +7,20 @@ consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 ---
 
-# Acceso a los datos almecenados
+# Creación Modulos
 
 ## Context and Problem Statement
-El sistema debe almacenar los datos de los clientes como email, nombre, número, id, al igual que el de los pedidos, los cuales tendrán id, dimensión, peso, precio y estado.
+La lógica de negocio de la empresa cuenta con varios módulos con distintos grados de criticidad.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* RF03: Acceso a los datos almacenados
+* RF04: Módulo gestión de pedidos
+* RF05: Módulo gestión de pedidos
+* RF06: Módulo gestión de repartos y rutas
+* RF07: Módulo gestión de estadísticas
+* RF08: Módulo gestión de incidencias
+* RF09: Módulo gestión de pagos
 
 ## Considered Options
 
@@ -23,4 +28,4 @@ El sistema debe almacenar los datos de los clientes como email, nombre, número,
 
 ## Decision Outcome
 
-Chosen option: "0004-1-2-Bases-de-datos-SQL", because los datos serán almacenados en dos bases de datos distintas, de tipo SQL. En una de ella se guardarán los datos de los clientes, y en la otra los datos de los pedidos.
+Chosen option: "0004-1-2-Bases-de-datos-SQL", because se creará un módulo por cada agrupación de clases y componentes que se relacionan entre sí.
