@@ -1,6 +1,6 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
-status: "proposed"
+status: "Accepted"
 date: 2024-11-09
 decision-makers: Gabriel Miró-Granada Lluch, Alexander Pearson Huaycochea
 consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
