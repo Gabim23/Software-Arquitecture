@@ -1,7 +1,7 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
 status: "proposed"
-date: 2024-11-06
+date: 2024-11-09
 decision-makers: Gabriel Miró-Granada Lluch, Alexander Pearson Huaycochea
 consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
@@ -30,8 +30,8 @@ Chosen option: "0004-1-Driver-JDBC", because La comunicación de la base de dato
 ### Consequences
 
 * Good, because Está optimizado para manejar las consultas SQL de datos críticos entre los módulos.
-* Good, because Proporciona estandarización y uniformidad, lo cual facilita el uso de la API con múltiples bases de datos
-* Good, because Proporciona flexibilidad para elegir la mejor base de datos para cada microservicio
+* Good, because Proporciona estandarización y uniformidad, lo cual facilita el uso de la API con múltiples bases de datos.
+* Good, because Proporciona flexibilidad para elegir la mejor base de datos para cada microservicio.
 * Bad, because Tiene dificultad para escalabilidad horizontal. A medida que el sistema crece y se necesitan más instancias de un microservicio, la gestión de las conexiones JDBC puede volverse más compleja.
 
 

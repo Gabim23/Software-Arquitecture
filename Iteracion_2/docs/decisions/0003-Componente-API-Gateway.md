@@ -1,7 +1,7 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
 status: "proposed"
-date: 2024-11-06
+date: 2024-11-09
 decision-makers: Gabriel Miró-Granada Lluch, Alexander Pearson Huaycochea
 consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
@@ -29,7 +29,7 @@ Chosen option: "0003-1-Gateway-centralizada", because Simplifica el control de a
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
-* Good, because El monitoreo del tráfico de datos se realiza desde un punto único
+* Good, because El monitoreo del tráfico de datos se realiza desde un punto único.
 * Good, because Al tener solo una API gateway centralizada, el sistema realiza las solicitudes de manera óptima.
 * Bad, because La efectividad de la comunicacion entre clientes y microservicios depende de una única API Gateway, afectando la disponibilidad del sistema.
 

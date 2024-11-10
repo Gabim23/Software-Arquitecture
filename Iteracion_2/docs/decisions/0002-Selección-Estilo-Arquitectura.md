@@ -1,7 +1,7 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
 status: "proposed"
-date: 2024-11-06
+date: 2024-11-07
 decision-makers: Gabriel Miró-Granada Lluch, Alexander Pearson Huaycochea
 consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
@@ -50,7 +50,7 @@ Permite que el cliente envíe peticiones al servidor y este le responde con el r
 * Good, because Eventos Proporciona respuestas a eventos a tiempo real.
 * Good, because el Estilo por eventos permite que los módulos reaccionen a los cambios de estado sin necesidad de llamadas directas
 <!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Bad, because REST no es óptimo para actualizaciones en tiempo real.
+* Bad, because el estilo por eventos está enfocado para actualizaciones en tiempo real.
 * Bad, because El problema planteado no aplica el uso de sensores.
 
 ### 0002-3-Estilo-Por-Capas
