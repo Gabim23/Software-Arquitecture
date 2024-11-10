@@ -15,7 +15,7 @@ La lógica de negocio de la empresa cuenta con varios módulos con distintos gra
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* RF04: Módulo gestión de pedidos
+* RF04: Módulo gestión de clientes
 * RF05: Módulo gestión de pedidos
 * RF06: Módulo gestión de repartos y rutas
 * RF07: Módulo gestión de estadísticas
