@@ -11,6 +11,7 @@ informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 
 ## Context and Problem Statement
 
+En una arquitectura de microservicios con cliente y servidor, se necesita un API Gateway que gestione de forma eficiente y segura las comunicaciones. La decisión es entre una API Gateway centralizada, que simplifica el control, o una descentralizada, que permite mayor flexibilidad para distintos tipos de clientes.
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
@@ -23,15 +24,14 @@ informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 
 ## Decision Outcome
 
-Chosen option: "0003-1-Gateway-centralizada", because Al estar trabajando en una arquitectura de microservicios con parte cliente y servidor, es necesario una API centralizada para gestionar la comunicacion entre estos.
+Chosen option: "0003-1-Gateway-centralizada", because Simplifica el control de acceso y seguridad, centraliza el monitoreo, y optimiza la comunicación cliente-servidor en una arquitectura de microservicios.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
-* Good, because El monitoreo del tràfico de datos se realiza desde un único punto 
+* Good, because El monitoreo del tráfico de datos se realiza desde un punto único
 * Good, because Al tener solo una API gateway centralizada, el sistema realiza las solicitudes de manera óptima.
-* Bad, because La efectividad de la comunicacion entre clientes y microservicios depende de una unica API Gateway, afectando la disponibilidad del sistema.
-
+* Bad, because La efectividad de la comunicacion entre clientes y microservicios depende de una única API Gateway, afectando la disponibilidad del sistema.
 
 <!-- This is an optional element. Feel free to remove. -->
 

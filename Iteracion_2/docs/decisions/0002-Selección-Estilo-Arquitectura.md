@@ -11,7 +11,7 @@ informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 
 ## Context and Problem Statement
 
-Este MADR sustitute al 0001-Selección-Estilo-Arquitectura.md generado en la primera iteración con el objetivo de corregir errores.
+Este MADR sustituye al 0001-Selección-Estilo-Arquitectura.md generado en la primera iteración con el objetivo de corregir errores.
 La arquitectura del sistema pasará de ser monolítica a una basada en microservicios en la que hay clientes pc y móvil que utilizan http/REST.
 
 <!-- This is an optional element. Feel free to remove. -->
@@ -27,7 +27,7 @@ La arquitectura del sistema pasará de ser monolítica a una basada en microserv
 
 ## Decision Outcome
 
-Chosen option: "0002-1-Estilo-Cliente-Servidor-con-HTTP/REST", because permite que los cliente envíen peticiones al servidor, y este le responde con los datos solicitados,como la confirmación de un pedido o el estado de una solicitud. Además al estar basado en protocolos HTTP/REST facilita la comprensión de las interacciones entre el cliente y servidor.
+Chosen option: "0002-1-Estilo-Cliente-Servidor-con-HTTP/REST", because Permite que los cliente envíen peticiones al servidor y este le responde con los datos solicitados, como la confirmación de un pedido o el estado de una solicitud. Además al estar basado en protocolos HTTP/REST facilita la comprensión de las interacciones entre el cliente y servidor.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences

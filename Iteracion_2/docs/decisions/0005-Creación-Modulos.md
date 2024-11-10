@@ -24,8 +24,8 @@ La lógica de negocio de la empresa cuenta con varios módulos con distintos gra
 
 ## Considered Options
 
-* 0004-1-2-Bases-de-datos-SQL
+* 0004-1-2-Bases-De-Datos-SQL
 
 ## Decision Outcome
 
-Chosen option: "0004-1-2-Bases-de-datos-SQL", because se creará un módulo por cada agrupación de clases y componentes que se relacionan entre sí.
+Chosen option: "0004-1-2-Bases-De-Datos-SQL", because se creará un módulo por cada agrupación de clases y componentes que se relacionan entre sí.
