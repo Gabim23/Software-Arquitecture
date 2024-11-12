@@ -16,7 +16,7 @@ El sistema debe incluir restricciones en la cantidad de solicitudes de un pedido
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* RF5.1: Restriccion de solicitudes de pedido
+* RF5.1: Restricción de solicitudes de pedido
 
 ## Considered Options
 
@@ -25,14 +25,14 @@ El sistema debe incluir restricciones en la cantidad de solicitudes de un pedido
 
 ## Decision Outcome
 
-Chosen option: "0007-1-Patrón-Circuit-Breaker", because Este patrón rompe el flujo y maneja el limite de intentos evitando que el sistema experimente sobrecargas de solicitudes.
+Chosen option: "0007-1-Patrón-Circuit-Breaker", because Este patrón rompe el flujo y maneja el límite de intentos evitando que el sistema experimente sobrecargas de solicitudes.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
 * Good, because Este patrón es ideal para el sistema de arquitectura de microservicios porque reintenta el flujo sin comprometer otros servicios.
 * Good, because Este patrón responde rápidamente a los cambios de estado evitando hacer solicitudes innecesarias.
-* Bad, because, al estar trabajando en un sistema con bases de datos, si este falla el patrón bloquea el acceso al servicio para todos los usuarios hasta que este se recupere.
+* Bad, because, al estar trabajando en un sistema con bases de datos, si este falla, el patrón bloquea el acceso al servicio para todos los usuarios hasta que este se recupere.
 
 
 # Pros and Cons of the Options
@@ -40,8 +40,8 @@ Chosen option: "0007-1-Patrón-Circuit-Breaker", because Este patrón rompe el f
 ### 0007-2-Patrón-Command
 
 <!-- This is an optional element. Feel free to remove. -->
-Este patrón convierte las solicitudes en un objeto independiente, dicho esto existe mas libertad al manejar la informacion de esta solicitud.
+Este patrón convierte las solicitudes en un objeto independiente, dicho esto existe mas libertad al manejar la información de esta solicitud.
 
-* Good, because Las solicitudes se pueden pasar como argumentos a metetodos y admitir operaciones que se puedan deshacer.
+* Good, because Las solicitudes se pueden pasar como argumentos a métodos y admitir operaciones que se puedan deshacer.
 * Bad, because Las solicitudes se pueden reatrasar lo cual perjudica al funcionamiento de nuestro sistema.
 * Bad, because Genera una capa completamente nueva entre remitentes y receptores.
