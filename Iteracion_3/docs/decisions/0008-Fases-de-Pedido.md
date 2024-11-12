@@ -11,33 +11,35 @@ informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 
 ## Context and Problem Statement
 
-El sistema debe incluir restricciones en la cantidad de solicitudes de un pedido que puede realizar el cliente.
+El sistema verifica que los pedidos pasen por un proceso de tres fases, Preprocesado del pedido, Autorización y Aceptación
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
-* RF5.1: Restricción de solicitudes de pedido
+* RF5.2: Fases del Pedido
 
 ## Considered Options
 
-* 0007-1-Patrón-Circuit-Breaker
-* 0007-2-Patrón-Command
+* 0008-1-Patrón-State
+* 0008-2-Patrón-Command
 
 ## Decision Outcome
 
-Chosen option: "0007-1-Patrón-Circuit-Breaker", because Este patrón rompe el flujo y maneja el límite de intentos evitando que el sistema experimente sobrecargas de solicitudes.
+Chosen option: "0008-1-Patrón-State", because Permite a un objeto alterar su comportamiento cuando cambia su estado interno.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
-* Good, because Este patrón es ideal para el sistema de arquitectura de microservicios porque reintenta el flujo sin comprometer otros servicios.
-* Good, because Este patrón responde rápidamente a los cambios de estado evitando hacer solicitudes innecesarias.
-* Bad, because, al estar trabajando en un sistema con bases de datos, si este falla, el patrón bloquea el acceso al servicio para todos los usuarios hasta que este se recupere.
+* Good, because El cambio de un estado a otro es secuencial y dependiente.
+* Good, because Cada fase o estado se puede interpretar como una clase independiente.
+* Good, because Simplifica el añadido o modificación de estados, sin alterar los estados ya existentes.
+* Bad, because Incrementa considerablemte la cantidad de clases del sistema.
+* Bad, becaise Puede llevar a sobrecargas en sistemas con muchas fases.
 
 
 # Pros and Cons of the Options
 
-### 0007-2-Patrón-Command
+### 0007-2-Patrón-Strategy
 
 <!-- This is an optional element. Feel free to remove. -->
 Este patrón convierte las solicitudes en un objeto independiente, dicho esto existe mas libertad al manejar la información de esta solicitud.
