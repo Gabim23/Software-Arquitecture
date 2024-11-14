@@ -11,39 +11,41 @@ informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 
 ## Context and Problem Statement
 
-El sistema verifica que los pedidos pasen por un proceso de tres fases, Preprocesado del pedido, Autorización y Aceptación
+El sistema verifica que los pedidos pasen por un proceso de tres fases, Preprocesado del pedido, Autorización y Aceptación.
+Además no se debe de permitir que un pedido pase de un estado a otro si el anterior no se ha completado correctamente.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
 
 * RF5.2: Fases del Pedido
+* RF5.3: Verificación de Fases del Pedido
 
 ## Considered Options
 
 * 0008-1-Patrón-State
-* 0008-2-Patrón-Command
+* 0008-2-Patrón-Chain-of-Responsability
 
 ## Decision Outcome
 
-Chosen option: "0008-1-Patrón-State", because Permite a un objeto alterar su comportamiento cuando cambia su estado interno.
+Chosen option: "0008-2-Patrón-Chain-of-Responsability", because 
+Permite a un objeto cambiar de estado sin que este modifique su comportamiento interno. Puediendo pasar de un estado a otro siguiendo una cadena.
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
-* Good, because El cambio de un estado a otro es secuencial y dependiente.
-* Good, because Cada fase o estado se puede interpretar como una clase independiente.
-* Good, because Simplifica el añadido o modificación de estados, sin alterar los estados ya existentes.
-* Bad, because Incrementa considerablemte la cantidad de clases del sistema.
-* Bad, becaise Puede llevar a sobrecargas en sistemas con muchas fases.
+* Good, because Permite el desacoplamiento de cada fase, haciendo que cada una se covierta en un manejador independiente.
+* Good, because Incrementa la flexibilidad al tener la posiblidad abierta de agregar fases sin alterar las ya existentes.
+* Good, because Si una solicitud de un pedido falla en una fase este no podrá continuar la cadena devolviendo un error.
+* Bad, because Si la cadena de estados es larga se podrían experimentar retrasos en los procesamientos.
 
 
 # Pros and Cons of the Options
 
-### 0007-2-Patrón-Strategy
+### 0008-1-Patrón-State
 
 <!-- This is an optional element. Feel free to remove. -->
-Este patrón convierte las solicitudes en un objeto independiente, dicho esto existe mas libertad al manejar la información de esta solicitud.
+Este patrón permite alterar el comportamiento de un objeto cuando cambia su estado interno.
 
-* Good, because Las solicitudes se pueden pasar como argumentos a métodos y admitir operaciones que se puedan deshacer.
-* Bad, because Las solicitudes se pueden reatrasar lo cual perjudica al funcionamiento de nuestro sistema.
-* Bad, because Genera una capa completamente nueva entre remitentes y receptores.
+* Good, because El cambio de un estado es secuencial y dependiente.
+* Bad, because Incrementa considerablemente la cantidad de clases del sistema.
+* Bad, because Puede lllevar a sobrecargas en sistemas con muchas fases.
