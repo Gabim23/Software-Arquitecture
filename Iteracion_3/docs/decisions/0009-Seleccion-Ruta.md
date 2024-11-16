@@ -21,7 +21,7 @@ Debemos de encontrar el mejor patrón para seleccionar uno de los dos algoritmos
 
 ## Considered Options
 
-* 0009-1-Patrón-Template
+* 0009-1-Patrón-Template-Method (ArchMind)
 * 0009-2-Patrón-Strategy
 
 ## Decision Outcome
@@ -43,16 +43,13 @@ Chosen option: "0009-2-Patrón-Strategy", because Permite cambiar los algoritmos
 <!-- This is an optional element. Feel free to remove. -->
 ## Pros and Cons of the Options
 
-### 0008-1-Patrón-Template
+### 0009-1-Patrón-Template-Method
 
 <!-- This is an optional element. Feel free to remove. -->
+Es un patrón de diseño de comportamiento que define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban pasos del algoritmo sin cambiar su estructura.
 
-
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
-
+* Good, because Permite integrar más algoritmos de optimización si fuese necesario incorporar más.
+* Good, because Reduce la duplicación al implementar la clase una sola vez.
+* Bad, because Limita la flexibilidad.
+* Bad, because Dependencia de una jerarquía fija.
 
