@@ -1,7 +1,7 @@
 ---
 # These are optional metadata elements. Feel free to remove any of them.
 status: "Accepted"
-date: 2024-11-10
+date: 2024-11-15
 decision-makers: Gabriel Miró-Granada Lluch, Alexander Pearson Huaycochea
 consulted: RonaldS. Silvera Llimpe, Ikram El Jauhari Al Jaouhari
 informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
@@ -23,6 +23,7 @@ Debemos de encontrar el mejor patrón para seleccionar uno de los dos algoritmos
 
 * 0009-1-Patrón-Template-Method
 * 0009-2-Patrón-Strategy
+* 0009-3-Patrón-Service-Discovery (ArchMind)
 
 ## Decision Outcome
 
@@ -52,4 +53,16 @@ Es un patrón de diseño de comportamiento que define el esqueleto de un algorit
 * Good, because Reduce la duplicación al implementar la clase una sola vez.
 * Bad, because Limita la flexibilidad.
 * Bad, because Dependencia de una jerarquía fija.
+
+
+### 0009-3-Patrón-Service-Discovery
+
+
+El patrón Service Discovery es un patrón arquitectural que permite a los servicios en un sistema distribuido localizar dinámicamente otros servicios mediante un registro centralizado o distribuido. Es un patrón de comportamiento porque facilita la interacción y comunicación entre servicios.
+
+* Good, because Facilita la comunicación dinámica entre servicios sin necesidad de realizar configuraciones estáticas.
+* Good, because Permite el ahorro de tiempo en configuraciones manuales.
+* Bad, because No resuelve el problema principal por sí solo.
+* Bad, because Presenta dependencia del registro de servicios:.
+
 
