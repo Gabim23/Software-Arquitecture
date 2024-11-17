@@ -21,7 +21,7 @@ Debemos de encontrar el mejor patrón para seleccionar uno de los dos algoritmos
 
 ## Considered Options
 
-* 0009-1-Patrón-Template-Method (ArchMind)
+* 0009-1-Patrón-Template-Method
 * 0009-2-Patrón-Strategy
 
 ## Decision Outcome
