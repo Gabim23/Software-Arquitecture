@@ -34,7 +34,7 @@ Permite a un objeto cambiar de estado sin que este modifique su comportamiento i
 <!-- This is an optional element. Feel free to remove. -->
 ### Consequences
 
-* Good, because Permite el desacoplamiento de cada fase, haciendo que cada una se covierta en un manejador independiente.
+* Good, because Permite el desacoplamiento de cada fase, haciendo que cada una se convierta en un manejador independiente.
 * Good, because Incrementa la flexibilidad al tener la posiblidad abierta de agregar fases sin alterar las ya existentes.
 * Good, because Si una solicitud de un pedido falla en una fase este no podrá continuar la cadena devolviendo un error.
 * Bad, because Si la cadena de estados es larga se podrían experimentar retrasos en los procesamientos.
@@ -49,12 +49,12 @@ Este patrón permite alterar el comportamiento de un objeto cuando cambia su est
 
 * Good, because El cambio de un estado es secuencial y dependiente.
 * Bad, because Incrementa considerablemente la cantidad de clases del sistema.
-* Bad, because Puede lllevar a sobrecargas en sistemas con muchas fases.
+* Bad, because Puede llevar a sobrecargas en sistemas con muchas fases.
 
 ### 0008-3-Patrón-Command
 
 Este patrón convierte las solicitudes en un objeto independiente, dicho esto existe mas libertad al manejar la información de esta solicitud.
 
-Good, because Puede desacoplar las clases que invocan operaciones de las clases que realizan estas operaciones, cumpliendo con el principio de Responsabilidad Única.
-Bad, because Las solicitudes se pueden reatrasar lo cual perjudica al funcionamiento de nuestro sistema.
-Bad, because Genera una capa completamente nueva entre remitentes y receptores.
+* Good, because Puede desacoplar las clases que invocan operaciones de las clases que realizan estas operaciones, cumpliendo con el principio de Responsabilidad Única.
+* Bad, because Las solicitudes se pueden reatrasar lo cual perjudica al funcionamiento de nuestro sistema.
+* Bad, because Genera una capa completamente nueva entre remitentes y receptores.
