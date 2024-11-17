@@ -21,7 +21,7 @@ El sistema debe incluir restricciones en la cantidad de solicitudes de un pedido
 ## Considered Options
 
 * 0007-1-Patrón-Circuit-Breaker
-* 0007-2-Patrón-Command
+* 0007-2-Patrón-Command (ArchMind)
 
 ## Decision Outcome
 
