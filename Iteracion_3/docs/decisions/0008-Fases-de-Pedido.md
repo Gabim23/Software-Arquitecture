@@ -24,6 +24,7 @@ Además no se debe de permitir que un pedido pase de un estado a otro si el ante
 
 * 0008-1-Patrón-State
 * 0008-2-Patrón-Chain-of-Responsability
+* 0008-3-Patrón-Command (ArchMind)
 
 ## Decision Outcome
 
@@ -49,3 +50,11 @@ Este patrón permite alterar el comportamiento de un objeto cuando cambia su est
 * Good, because El cambio de un estado es secuencial y dependiente.
 * Bad, because Incrementa considerablemente la cantidad de clases del sistema.
 * Bad, because Puede lllevar a sobrecargas en sistemas con muchas fases.
+
+### 0008-3-Patrón-Command
+
+Este patrón convierte las solicitudes en un objeto independiente, dicho esto existe mas libertad al manejar la información de esta solicitud.
+
+Good, because Puede desacoplar las clases que invocan operaciones de las clases que realizan estas operaciones, cumpliendo con el principio de Responsabilidad Única.
+Bad, because Las solicitudes se pueden reatrasar lo cual perjudica al funcionamiento de nuestro sistema.
+Bad, because Genera una capa completamente nueva entre remitentes y receptores.
