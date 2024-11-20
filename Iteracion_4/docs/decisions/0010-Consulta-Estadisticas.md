@@ -11,7 +11,7 @@ informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 
 ## Context and Problem Statement
 
-Es necesario crear una clase para la consulta de estadísticas.
+Es necesario crear una clase para las estadísticas para que se pueda acceder a información relevante.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
@@ -20,7 +20,7 @@ Es necesario crear una clase para la consulta de estadísticas.
 
 ## Decision Outcome
 
-Se creará la clase GestorEstadisticas,la cual generará gráficos de 3 tipos.
+Se creará una clase GestorEstadisticas, because N hemos encontrado un patrón que resuelva el problema. La clase generará 3 tipos de gráficos. E
 
 ### Consequences
 
