@@ -11,7 +11,7 @@ informed: Alberto Mayoral Gómez, Jorge Ramirez Gayo
 
 ## Context and Problem Statement
 
-El sistema debe de crear esrtadísticas para acceder a datos útiles de forma sencilla.
+El sistema debe de crear estadísticas para acceder a datos útiles de forma sencilla.
 
 <!-- This is an optional element. Feel free to remove. -->
 ## Decision Drivers
